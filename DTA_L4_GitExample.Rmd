@@ -1,28 +1,64 @@
 ---
-title: "DTA_L4_Git"
+title: "Simple document"
 output: html_document
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+I'm an R Markdown document! 
+
+# Section 1
+
+Here's a **code chunk** that samples from 
+a _normal distribution_:
+
+```{r}
+samp = rnorm(100)
+length(samp)
 ```
 
-## R Markdown
+# Section 2
 
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+I can take the mean of the sample, too!
+The mean is `r mean(samp)`.
 
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+Text formatting 
+------------------------------------------------------------
 
-```{r cars}
-summary(cars)
-```
+*italic*  or  _italic_
+**bold**  or  __bold__
+`code`
+superscript^2^ and subscript~2~
 
-## Including Plots
 
-You can also embed plots, for example:
+Headings
+------------------------------------------------------------
 
-```{r pressure, echo=FALSE}
-plot(pressure)
-```
+# 1st Level Header
 
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+## 2nd Level Header
+
+### 3rd Level Header
+
+
+Lists
+------------------------------------------------------------
+
+*   Bulleted list item 1
+
+*   Item 2
+
+    * Item 2a
+
+    * Item 2b
+
+1.  Numbered list item 1
+
+1.  Item 2. The numbers are incremented automatically in the output.
+
+
+Tables 
+------------------------------------------------------------
+
+First Header  | Second Header
+------------- | -------------
+Content Cell  | Content Cell
+Content Cell  | Content Cell
