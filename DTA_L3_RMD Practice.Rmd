@@ -1,6 +1,6 @@
 ---
 title: "DTA_L3_RMD Practice"
-output: html_document
+output: github_document
 ---
 
 ```{r setup, include=FALSE}
